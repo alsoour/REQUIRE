@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/require.js" data-main="js/a"></script>
+	<script type="text/javascript">
+		require.config({
+			paths:{
+				"jquery":["http://libs.baidu.com/jquery/2.0.3/jquery"]
+			}
+		})
+		require(["jquery","a"],function($){
+			$(function(){
+				alert("load finished");
+			})
+		});
+		console.log(window.console)
+	</script>
+</head>
+<body>
+	<span>body</span>
+</body>
+</html>
